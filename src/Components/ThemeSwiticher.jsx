@@ -18,12 +18,11 @@ const ThemeSwiticher = () => {
 
   useEffect(() => {
     let savedTheme = localStorage.getItem("theme");
-    console.log(savedTheme);
     themehandler(savedTheme);
   }, []);
 
   return (
-    <div className="flex h-8 w-14 items-center justify-around rounded-full bg-black dark:bg-black">
+    <div className="flex items-center justify-around h-8 bg-black rounded-full w-14 dark:bg-black">
       <button
         className={`${activeCircleStyles} ${
           theme === "light" ? "bg-white" : ""

@@ -1,12 +1,13 @@
 const EmptySearch = () => {
   return (
-    <div className="col-span-4 mt-6 flex flex-col items-center text-center">
+    <div className="flex flex-col items-center col-span-4 text-center">
       <svg
         width="416"
         height="344"
         viewBox="0 0 416 344"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="w-full"
       >
         <path
           d="M160.38 195.732C159.562 202.436 153.459 207.204 146.755 206.386C140.048 205.564 135.283 199.464 136.101 192.76C136.92 186.056 143.023 181.288 149.727 182.107C156.431 182.925 161.199 189.028 160.38 195.732Z"
@@ -75,7 +76,7 @@ const EmptySearch = () => {
         />
       </svg>
 
-      <h2 className="text-4xl">No results found</h2>
+      <h2 className="text-2xl md:text-4xl">No results found</h2>
       <p className="font-light">
         We can’t find the country you searched for... Try to search for another
         one
